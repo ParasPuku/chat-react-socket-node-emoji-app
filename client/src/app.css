@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+header.chat-header {
+    background: #25696b;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.chat-icon {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+h2.chat-desc {
+    padding-left: 10px;
+}
+
+.chat-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.message-header h2 {
+    color: #ffff;
+    padding: 15px 10px;
+    font-family: 'Montserrat';
+}
+
+.chat-container h1 {
+    margin-top: 50px;
+}
+
+.message-box-container {
+    margin-top: 50px;
+    width: 650px;
+    height: 300px;
+}
+
+.message-header {
+    background-color: #25696b;
+}
+
+.message-body {
+    background: #ffffff;
+    min-height: 300px;
+}
+
+.message-body.scroll {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.message {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.message p {
+    font-family: Montserrat;
+    padding: 5px 0px 5px 10px;
+    background: #aedec1;
+    margin: 5px 15px;
+    color: #282828;
+    border-radius: 10px 10px 0px 10px;
+}
+
+/* .message p:nth-last-of-type(even) {
+    background-color: #808080;
+} */
+
+.bottom-section input {
+    width: 535px;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+}
+
+.bottom-section input:focus {
+    outline: 0 ;
+}
+
+button.btn {
+    width: 100px;
+    background: #79008f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 12px 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #25696b;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-footer p {
+    color: #e0e0e0;
+    margin: 0 4px;
+    border-right: 1px solid #ffff;
+    padding-right: 5px;
+    font-family: 'Ubuntu';
+    font-size: 13px;
+}
+
+p:last-child{
+    border-right: none;
+}
+
+.bottom-section {
+    margin-top: 70px;
+}
+
+img.emoji-icon {
+    position: relative;
+    left: -40px;
+    cursor: pointer;
+}
+
+aside.emoji-picker-react {
+    position: absolute !important;
+    top: 160px;
+    left: 508px;
+    width: 300px !important;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+span.currenttime {
+    font-size: 10px;
+    color: #808080;
+    padding-right: 5px;
+}
+
+button:disabled {
+    background-color: #878787;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+span.option {
+    writing-mode: vertical-lr;
+    cursor: pointer;
+}
+
+.msg-options {
+    width: 70px;
+    height: 30px;
+    background: #96cca1;
+    color: #000000;
+    position: absolute;
+    top: 126px;
+    right: 100px;
+}
+
+.msg-options li {
+    list-style: none;
+    padding: 5px 10px;
+    font-family: 'Ubuntu';
+    cursor: pointer;
+}
